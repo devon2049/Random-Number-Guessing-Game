@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        while(true) {
+            // Prompt the user for a number
+            let num = prompt("Guess the number! :)");
+                // Casting the number, converting it to a number
+                num = Number(num);
+            // Create the random number
+            const randomNumber = Math.ceil(Math.random() * 10);
+
+            if(num === randomNumber) {
+                alert("You Win! :D")
+                break; // Stops code, ends the game because user guessed correctly
+            } else {
+                console.log("You guess", num, "But the correct number was ", randomNumber)
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>
